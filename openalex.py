@@ -1,4 +1,8 @@
+'''
+Using pyalex to get a country's overall OA status
 
+anton@angelo.nz
+'''
 import pprint
 from pyalex import Works, Authors, Sources, Institutions, Concepts, Publishers, Funders
 import pyalex
