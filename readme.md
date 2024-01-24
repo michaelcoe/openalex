@@ -12,3 +12,7 @@ Summary of Open Alex's knowledge of the academic output for a particular country
 - The output is in a csv file. 
 ## Green, green, everywhere (greenworks.py)
 Where are your green OA works, which repository?  Finsd the best OA location (as long as its a repository)
+
+## APC guesses (apcguesses.py)
+
+How much does OA cost?  This script looks at an institution, and gets the _maximum_ cost for all the articles published. Just add the instituion's [ROR id](https://ror.org/)  
