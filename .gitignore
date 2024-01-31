@@ -2,3 +2,5 @@
 de_institutions_full.py
 results/*
 ! results/results.txt
+
+*.csv

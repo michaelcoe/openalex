@@ -11,12 +11,12 @@ def pretty_to_file(toprint, filename):
     with open(filename, "w", encoding="utf8") as output:
         pprint.pprint(toprint, output)
 
-pyalex.config.email = "anton.angelo@canterbury.ac.nz" # set this to your own email.  It puts you in the openalex polite queue
-publication_years =  range(2000,2024)
+pyalex.config.email = "michael.coe@canterbury.ac.nz" # set this to your own email.  It puts you in the openalex polite queue
+publication_years =  range(2022,2024)
 
 # ISO country code that we are interested in getting data for
 
-country_code = "se" # set this
+country_code = "nz" # set this
 results_filename =  country_code + "_results.csv"
 results_directory = "results/"
 

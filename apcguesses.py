@@ -19,7 +19,7 @@ def pretty_to_file(toprint, filename):
     with open(filename, "w", encoding="utf8") as output:
         pprint.pprint(toprint, output)
 
-pyalex.config.email = "anton.angelo@canterbury.ac.nz" # set this to your own email.  It puts you in the openalex polite queue
+pyalex.config.email = "michael.coe@canterbury.ac.nz" # set this to your own email.  It puts you in the openalex polite queue
 
 
 results_filename =  "apcguesses_results_"+timestr+".csv"
@@ -33,7 +33,6 @@ with open(results_directory+results_filename, "w",encoding="utf8") as resultsfil
     resultswriter.writerow(["year", "number_of_works", "output_type","number_of_authors","doi","usd_value"])
 
     for year in publication_years:
-        print(year)
         works = Works() \
                 .filter(authorships={"institutions": {"ror": "https://ror.org/03y7q9t39"}}) \
                 .filter(is_oa =True) \
@@ -49,7 +48,7 @@ with open(results_directory+results_filename, "w",encoding="utf8") as resultsfil
 
         number_of_works = len(works_list)
 
-        print(number_of_works)
+        print("Year: {}, Number Works: {}" % (year, number_of_works))
 
 
 
