@@ -14,10 +14,10 @@ def pretty_to_file(toprint, filename):
     with open(filename, "w", encoding="utf8") as output:
         pprint.pprint(toprint, output)
 
-pyalex.config.email = "anton.angelo@canterbury.ac.nz" # set this to your own email.  It puts you in the openalex polite queue
+pyalex.config.email = "michael.coe@canterbury.ac.nz" # set this to your own email.  It puts you in the openalex polite queue
 publication_years =  range(2000,2024)
 
-country_code = "gb" # set this (ISO country code)
+country_code = "nz" # set this (ISO country code)
 results_filename =  country_code + "_greenworks_results.csv"
 results_directory = "results/"
 
